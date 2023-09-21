@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class='title-notes'>Заметки пользователя - {{ user.username }}</h1>
+    <div class="notes-container" style="display: flex; flex-wrap: wrap; height: 300px">
+        {% for note in notes %}
+
+            <div class="note-container">
+                <div class="note-title">
+                    <h2><a href={% url 'note' pk=note.id %}>{{ note.title }}</a></h2>
+                </div>
+                <div class="note-description">
+                    {% if note.description != "" %}
+                    <p>{{ note.description }}</p>
+                    {% else %}
+                    <p>Пустое описание</p>
+                    {% endif %}
+                </div>
+                <div class="note-button">
+                    <a href="{% url 'edit_note' pk=note.id %}">Изменить</a>
+                    <a href="{% url 'delete_note' pk=note.id %}">Удалить</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

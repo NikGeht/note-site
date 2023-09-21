@@ -1,0 +1,318 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.a {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow:visible;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  background-color: #333;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  margin-right: 2px;
+  text-align: center;
+  line-height: center;
+  cursor: pointer;
+  flex-grow: 1;
+  line-height: 3em;
+}
+
+
+
+.navbar a:hover {
+  background-color: black;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-right: 10px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+i {
+  border: solid white;
+  background-color: #333;
+  border-width: 0 3px 3px 0;
+  display: flex;
+  padding: 5px;
+  overflow: hidden;
+
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.nav-profile {
+  flex-grow: 0.2;
+}
+
+
+.title-notes {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.note-title h2 {
+  text-align: center;
+}
+
+.note-title h2 a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.note-button {
+  display: flex; 
+  flex-direction: row;
+  justify-content:center;
+}
+
+.note-button a{
+  display: block;
+  width: fit-content;
+  height: 15px;
+  background: #4f5b5e;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration: none; 
+  float: left;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+
+.note-button a:last-child {
+  margin-right: 0px;
+}
+
+.note-container {
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:3em;
+  background:#ffc;
+  color:#000;
+  width: 200px;
+}
+
+.notes-container {
+  justify-content: center;
+  align-items:start;
+}
+
+
+.reg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#register {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  color: #B4886B;
+  font-weight: bold;
+  display: block;
+  width: 130px;
+  float: left;
+}
+label:after { content: ": " }
+
+input {
+  padding: 3px;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 14px;
+  font-weight: 600;
+  width: 300px;
+}
+
+.reg-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button1 {
+  padding:10px;
+  border: 1px solid gray;
+  background-color:#3ad63a;
+  border-radius: 5px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font: inherit;
+}
+
+#button1:focus {
+  outline: 2px solid gray;
+  font-weight: bold;
+  color: white;
+}
+
+#button1:hover {
+  background-color: rgb(0, 255, 64);
+  box-shadow: 3px 3px 5px grey;
+  cursor: pointer;
+}
+
+#button2 {
+  padding:10px;
+  border: 1px solid gray;
+  background-color:#B4886B;
+  border-radius: 5px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font: inherit;
+}
+
+#button2:focus {
+  outline: 2px solid gray;
+  font-weight: bold;
+  color: white;
+}
+
+#button2:hover {
+  background-color: orange;
+  box-shadow: 3px 3px 5px grey;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+#login-button {
+  margin-top: 10px;
+  padding:10px;
+  border: 1px solid gray;
+  background-color:#c2b93e;
+  border-radius: 5px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font: inherit;
+}
+
+#login-button:focus {
+  outline: 2px solid gray;
+  font-weight: bold;
+  color: white;
+}
+
+#login-button:hover {
+  background-color: rgb(255, 230, 0);
+  box-shadow: 3px 3px 5px grey;
+  cursor: pointer;
+}
+
+.add-note-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-note-form {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+#add-note-form label{
+  width: 400px;
+  text-align: center;
+}
+
+#add-note-form * {
+  margin-bottom: 10px
+}
+
+#add-note-title {
+  width: 400px;
+}
+
+#add-note-description {
+  height: 150px;
+  width: 400px;
+}
+
+#add-note-text {
+  width: 400px;
+  height: 400px;
+}
+

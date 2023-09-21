@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт с заметками</title>
+    <style>
+        p:first-child {
+            text-indent: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

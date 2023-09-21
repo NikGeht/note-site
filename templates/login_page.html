@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 style='text-align:center;'>Авторизация пользователя</h1>
+    <div class='login-container'>
+        <form method="post" action="" id='login' name='login'>
+            {% csrf_token %}
+            <label>Логин</label>
+            <input type="text" name="username" />
+            <label>Пароль</label>
+            <input type="password" name="password" />
+            <input type="submit" value="Login" id='login-button' name='login-button'/>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="note-container" style="border: 1px solid Peru; font-family: arial,serif; margin: 5px 10px; min-width: 30px; width:auto;">
+                <div class="note-title" style="text-align: center">
+                    <h2>{{ note.title }}</h2>
+                </div>
+                <div class="note-text" id="note-text" style="word-break: break-word; text-align: left;" >
+                <p>{{ note.text }}</p>
+                </div>
+</div>
+
+{% endblock %}

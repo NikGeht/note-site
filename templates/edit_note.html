@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post">
+{% csrf_token %}
+    <div class="edit-container" id="edit-container">
+        <div class="edit-title">
+            <label>
+                <input type="text" name="title" value="{{ note.title }}">
+            </label>
+        </div>
+        <div class="edit-description">
+            <label>
+                <textarea name="description" placeholder="{{ note.description }}">{{ note.description }}</textarea>
+            </label>
+        </div>
+        <div class="edit-text">
+            <label>
+                <textarea name="text">{{ note.text }}</textarea>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="save">Save</button>
+    </div>
+</form>
+
+{% endblock %}

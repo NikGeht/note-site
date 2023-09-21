@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style='text-align: center'>Добавить заметку</h1>
+    <div class='add-note-container'>
+        <form method="post" id='add-note-form'>
+            {% csrf_token %}
+            <label for="add-note-title">Оглавление</label>
+            <input type="text" id='add-note-title' name="title">
+            <label for="add-note-description">Описание</label>
+            <textarea id='add-note-description' name="description" maxlength="100"></textarea>
+            <label for="text">Текст</label>
+            <textarea id='add-note-text' name="text"></textarea>
+            <input type="submit" value="Submit" id='button1' name='button1'/>
+            <input type="reset" value="Reset" id='button2' name='button2'/>
+        </form>
+    </div>
+{% endblock %}
